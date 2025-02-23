@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nomadly_front/views/welcome_page.dart';
 import 'package:nomadly_front/views/SignIn_page.dart';
+import 'package:nomadly_front/views/currency_converter_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,6 +22,7 @@ class MyApp extends StatelessWidget {
       home: const WelcomePage(), // Set WelcomePage as the initial screen
       routes: {
         '/sign-in': (context) => const SignInPage(),
+        '/currency-converter': (context) => const CurrencyConverterPage(),
       },
     );
   }

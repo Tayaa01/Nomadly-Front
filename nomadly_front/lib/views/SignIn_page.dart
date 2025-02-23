@@ -191,8 +191,8 @@ class _SignInPageState extends State<SignInPage> {
                 const SizedBox(height: 24),
 
                 // Or Continue With Divider
-                Row(
-                  children: const [
+                const Row(
+                  children: [
                     Expanded(
                       child: Divider(color: Color(0xFF333333), thickness: 1),
                     ),

@@ -186,9 +186,9 @@ class WelcomePage extends StatelessWidget {
                 onTap: () {},
                 child: Container(
                   padding: const EdgeInsets.symmetric(vertical: 12),
-                  child: Row(
+                  child: const Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: const [
+                    children: [
                       Text(
                         'Language',
                         style: TextStyle(

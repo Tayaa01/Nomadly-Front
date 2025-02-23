@@ -77,6 +77,11 @@ class HomePage extends StatelessWidget {
         type: BottomNavigationBarType.fixed,
         showSelectedLabels: false,
         showUnselectedLabels: false,
+        onTap: (index) {
+          if (index == 2) { // Index for the currency converter
+            Navigator.pushNamed(context, '/currency-converter');
+          }
+        },
         items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
@@ -87,8 +92,8 @@ class HomePage extends StatelessWidget {
             label: 'Search',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.navigation),
-            label: 'Navigation',
+            icon: Icon(Icons.currency_exchange),  // Changed to currency icon
+            label: 'Currency',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.bookmark_border),
